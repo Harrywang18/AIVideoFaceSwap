@@ -1,2 +1,2 @@
 # AIVideoChangeFace
-### Original Goal: this is about to input a given video and two human faces(A and B), change all the frames containing the face A to B.
+### Original Goal: this is about to input a given video and two human faces(A and B), change all face A in the video to B.
