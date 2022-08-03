@@ -27,21 +27,21 @@ int main(int argc, char* argv[]) {
     temp = imread(path);
     cout << temp.size() << endl;
     
-    // // generate the video
-    // const int fps = 50;
-    // VideoWriter video("../video_dir/test.avi", CV_FOURCC('M', 'J', 'P', 'G'), fps, temp.size());
-    // String pattern = "../test_rendering_data/*.png";
-    // vector<String> fn;
-    // glob(pattern, fn, false);
-    // size_t size = fn.size();
-    // sort(fn.begin(), fn.end(), cmp);
-    // for(size_t i = 0 ; i < size ; i++){
-    //     // cout << fn[i] << endl;
-    //     Mat img = imread(fn[i]);
-    //     // resize(img, img, temp.size());
-    //     video << img;
-    // }
-    // cout << "generate video complete!" << endl;
+    /* generate the video */
+    const int fps = 50;
+    VideoWriter video("../video_dir/test.avi", CV_FOURCC('M', 'J', 'P', 'G'), fps, temp.size());
+    String pattern = "../test_rendering_data/*.png";
+    vector<String> fn;
+    glob(pattern, fn, false);
+    size_t size = fn.size();
+    sort(fn.begin(), fn.end(), cmp);
+    for(size_t i = 0 ; i < size ; i++){
+        // cout << fn[i] << endl;
+        Mat img = imread(fn[i]);
+        // resize(img, img, temp.size());
+        video << img;
+    }
+    cout << "generate video complete!" << endl;
 
     /* play the video */
     String video_show = "video";
