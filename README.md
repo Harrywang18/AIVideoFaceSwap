@@ -9,3 +9,5 @@ This is about to input a given video and two human faces(A and B), swap all face
 * By using glob to acquire the filename list, the filenames are sorted by the alphabetical order.
 * Re-sort the filenames by the number ascending order
 * Generate the results to test.avi
+
+#### Convert a list of images to a video (by OpenGL)
