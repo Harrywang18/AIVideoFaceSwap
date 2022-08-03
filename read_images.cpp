@@ -6,7 +6,7 @@ using namespace cv;
 
 int main(int argc, char* argv[]) {
     
-    std::string path = "../test_data/1.png";
+    std::string path = "../test_rendering_data/1.png";
     Mat img_mat;
     img_mat = imread(path);
     if (!img_mat.data) {
