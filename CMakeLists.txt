@@ -13,7 +13,7 @@ set(OPENCV_COMPONENTS
         opencv_video)
 
 add_executable(video_play
-       read_images.cpp)
+       video_play_opencv.cpp)
 
 target_link_libraries(
         video_play
