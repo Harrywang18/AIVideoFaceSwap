@@ -14,12 +14,12 @@ set(OPENCV_COMPONENTS
         opencv_objdetect
         opencv_video)
 
-add_executable(video_play_openGL
+add_executable(triangle
         glad.c
-       video_play_openGL.cpp)
+       triangle.cpp)
 
 target_link_libraries(
-        video_play_openGL
+        triangle
         glfw
         ${OPENCV_COMPONENTS}
 )
