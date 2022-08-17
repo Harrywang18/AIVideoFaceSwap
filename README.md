@@ -3,6 +3,10 @@
 This is about to input a given video and two human faces(A and B), swap all face A in the video to B.
 
 ### Preparations
+#### Bring the header files to /usr/include
+* Remember to bring the header files to /usr/include:
+* dir: glad and KHR
+
 #### Convert a list of images to a video (by OpenCV)
 * Use cv::VideoWriter to convert the images to a video
 * The file names of the images are based on the ascending-sequence: 1.png 2.png ... 500.png 
